@@ -35,6 +35,7 @@
   text-align: center;
   color: black;
   font-weight: 900;
+  margin-top: 15px;
 }
 span{
     margin-right: 220px;
@@ -66,15 +67,15 @@ span{
     border-radius: 5px;
     border: none;
     background-color: green;
-    position: relative;
-    bottom: 35px;
-    left: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
     padding-left: 20px;
     padding-top: 5px;
 }
 .val{
     font-size: 25px;
     margin-left: 130px;
+    margin-top: 20px;
 }
 .container{
     display: flex;
