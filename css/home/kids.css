@@ -148,6 +148,7 @@
     position: relative;
     top: 40px;
     left: 100px;
+    width:280px ;
 }
 
 .imge:hover{
@@ -174,6 +175,13 @@
     cursor: pointer;
     position: relative;
     left: 100px;
+}
+
+.quality-icon_1{
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    right: 100px;
 }
 
 .btn{
@@ -291,5 +299,25 @@
     bottom: 280px;
     left: 350px;
   
+}
+
+.anker{
+    text-decoration: none;
+}
+
+.stars{
+    position: relative;
+    bottom: 735px;
+}
+
+.stars i {
+    color: #e6e6e6;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.stars i.active {
+    color: gold;
 }
 
