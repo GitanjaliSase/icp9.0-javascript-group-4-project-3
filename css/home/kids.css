@@ -129,3 +129,17 @@
     }
   
 }
+
+/*kids priview css*/
+
+.box{
+    margin: 20px auto;
+    height: 610px;
+    width: 1000px;
+    border: none;
+    object-fit: cover;
+    background-color: rgba(248, 242, 242, 0.934);
+    box-shadow:  2px 15px 12px 4px #ffffe6;
+    box-shadow:  2px 2px 2px 2px #d5d5d1;
+    border-radius: 20px;
+}
