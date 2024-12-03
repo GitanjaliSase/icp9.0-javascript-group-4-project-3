@@ -13,16 +13,7 @@
 
 
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">ShopEase</div>
-            <input type="text" placeholder="Search for Products, Brands and More" class="search-bar">
-            <div class="header-icons">
-                <button>Login</button>
-                <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
-            </div>
-        </div> 
-    </header>   
+       
     
     
     <div class="box">
@@ -50,6 +41,32 @@
                 <button class="btn">Add To Cart</button> 
                 <button class="btn" id="btn" onclick="order()">Buy Now</button>
             </div>
+
+            <div class="container-quality">
+                <img src="../../images/fashion-page/add.png" class="quality-icon" onclick="incre()"/>
+                <span id="quantity">0</span>
+                <img src="../../images/fashion-page/minus.png" class="quality-icon_1" onclick="dece()"/> 
+            </div>
+
+            <a href="../../pages/kids/kids.html" class="anker">
+                <p class="emoji">↖️</p>
+            </a>
+
+            <p class="head" id="head">Sizes :</p>
+                    <p class="size">S</p>
+                    <p class="size">M</p>
+                    <p class="size">L</p>
+                    <p class="size">XL</p>
+                    <p class="size">XXL</p>
+                    <p class="rate">Rating :</p>
+
+                    <div class="stars"> 
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star " ></i>
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                    </div>        
         </div>
     </div>
 
