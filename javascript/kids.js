@@ -1,41 +1,42 @@
-function kidsWare(num){
-    const mainImage = document.getElementsByClassName('thumbnails');
-      if(num == 1){
-        mainImage.src ="../../images/kidsFashion/kids1.jpg" ;
-        console.log("function call");
-      }
-      else if(num == 2){
-        mainImage.src = num;
-        console.log("function call");
-      }
-      else if(num == 3){
-        mainImage.src = num;
-        console.log("function call");
-      }
-      else if(num == 4){
-        mainImage.src = num;
-        console.log("function call");
-      }
-      
-    
-    }
 
-    /*function kidsWare(num){
-    const mainImage = document.getElementsByClassName('thumbnails');
-      if(num == 1){
-        mainImage.src = "../../images/kidsFashion/kids1.jpg";
-      }
-      else if(num == 2){
-        mainImage.src = "../../images/kidsFashion/kids1-1.jpg";
-      }
-      else if(num == 3){
-        mainImage.src = "../../images/kidsFashion/kids1-2.jpg";
-      }
-      else if(num == 4){
-        mainImage.src = "../../images/kidsFashion/kids1-3.jpg";
-      }
+
+    function kidsWare(imageName){
+      const mainImage = document.getElementById("mainImage");
+      mainImage.src= imageName;
+  }
+
+  const image=["../../images/kidsFashion/Slider1.jpg"  ,"../../images/kidsFashion/Slider2.jpg", "../../images/kidsFashion/Slider3.jpg" , "../../images/kidsFashion/Slider4.jpg",
+    "../../images/kidsFashion/Slider5.jpg" ,"../../images/kidsFashion/Slider6.jpg" ];
+
+    let index=0;
+    const slide = document.getElementById("slide");
     
-    }*/
+    function nextImg(){
+      if(index < image.length - 1)
+        {
+          index++;
+        }
+      else{
+          index = 0;
+      }  
+      slide.src=image[index]  
+     
+  }
+
+  function preImg(){
+      if(index > 0)
+        {
+          index--;
+        }
+      else{
+          index = image.length - 1;
+      }  
+      slide.src=image[index]  
+      
+  }
+
+
+   
 
 
     const quantElement = document.getElementById('quantity'); 
