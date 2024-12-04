@@ -18,6 +18,12 @@ body{
     text-decoration: none;
     font-size: 20px;
 }
+
+.Aboutus-button{
+     text-decoration: none;
+     color:white;
+}
+
 .container {
     margin: 5px auto;
     padding: 0 15px;
