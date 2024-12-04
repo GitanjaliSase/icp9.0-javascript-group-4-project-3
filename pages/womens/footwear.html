@@ -47,12 +47,12 @@
         <br>
     <h2 class="head">Women's Foot Wear</h2>
     <div class="slider">
-    <div class="img-changer-container" class="slides">
-        <img src="../../images/fashion-page/footslide2.jpg" class="banner-img" id="slider">
-            <img src="../../images/watch-img/left-arroww.png" class="icon-action icon-left" onclick="backward()" />
-            <img src="../../images/watch-img/right-arrow.png" class="icon-action icon-right" onclick="forward()" />
-    </div></div>
-    </div>
+        <div class="img-changer-container" class="slides">
+            <img src="../../images/fashion-page/footslide2.jpg" class="banner-img" id="slider">
+                <img src="../../images/watch-img/left-arroww.png" class="icon-action icon-left" onclick="backward()" />
+                <img src="../../images/watch-img/right-arrow.png" class="icon-action icon-right" onclick="forward()" />
+        </div> 
+       </div>
     <div class="container"> 
          <div class="box" style="height: 440px;" >
             <a href="../../pages/womens/foot.html">
@@ -160,5 +160,32 @@
         </div>
     </footer>
     <script src="../../javascript/script.js"></script>
+
+    <script> 
+  let images = ["../../images/fashion-page/footslide2.jpg",
+                     "../../images/fashion-page/heel.jpg", 
+                       ];
+let index = 0;
+const slide = document.getElementById('slider');
+function forward() {
+    if (index < images.length - 1) {
+        index++;
+    }
+    else {
+        index = 0;
+    }
+
+    slide.src = images[index]
+}
+function backward() {
+    if (index > 0) {
+        index--;
+    }
+    else {
+        index = images.length - 1;
+    }
+    slide.src = images[index]
+}
+    </script>
 </body>
 </html>

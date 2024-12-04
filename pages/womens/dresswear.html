@@ -52,7 +52,7 @@
                 <img src="../../images/watch-img/right-arrow.png" class="icon-action icon-right" onclick="forward()" />
         </div>
     </div>
-        </div>
+
     <div class="container"> 
          <div class="box" style="height: 560px;">
             <a href="../../pages/womens/dress.html">
@@ -162,7 +162,7 @@
     </footer>
     <script src="../javascript/script.js"></script>
     <script>
-        const sidebar = document.getElementById('sidebar');
+const sidebar = document.getElementById('sidebar');
 const toggleBtn = document.getElementById('toggle-btn');
 const closeBtn = document.getElementById('close-btn');
 
@@ -179,6 +179,36 @@ toggleBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     sidebar.style.left = '-300px';
 });
+    </script>
+    <script>
+        
+  let images = ["../../images/fashion-page/fashiondress.jpg",
+     "../../images/fashion-page/cloth2.jpg",
+    ];
+let index = 0;
+const slide = document.getElementById('slider');
+
+
+function forward() {
+    if (index < images.length - 1) {
+        index++;
+    }
+    else {
+        index = 0;
+    }
+
+    slide.src = images[index]
+}
+
+function backward() {
+    if (index > 0) {
+        index--;
+    }
+    else {
+        index = images.length - 1;
+    }
+    slide.src = images[index]
+}
     </script>
 </body>
 </html>
