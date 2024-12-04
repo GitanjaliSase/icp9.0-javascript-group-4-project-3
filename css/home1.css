@@ -50,3 +50,35 @@ main {
     color: #555;
     margin: 0.5em 0;
 }
+
+
+@media (max-width: 768px) {
+    .category-title {
+        font-size: 1.2em;
+    }
+
+    .product {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-title {
+        font-size: 1em;
+    }
+
+    .product {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 768px) {
+    .product:hover {
+        transform: scale(1.05);
+    }
+}

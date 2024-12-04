@@ -97,5 +97,20 @@ function backward() {
     slide.src = images[index]
 }
 
+const sidebar = document.getElementById('sidebar');
+const toggleBtn = document.getElementById('toggle-btn');
+const closeBtn = document.getElementById('close-btn');
 
+// Function to toggle the sidebar
+toggleBtn.addEventListener('click', () => {
+    if (sidebar.style.left === '0px') {
+        sidebar.style.left = '-300px'; // Hide sidebar
+    } else {
+        sidebar.style.left = '0'; // Show sidebar
+    }
+});
 
+// Function to close the sidebar
+closeBtn.addEventListener('click', () => {
+    sidebar.style.left = '-300px';
+});
