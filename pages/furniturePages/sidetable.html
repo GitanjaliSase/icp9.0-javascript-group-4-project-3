@@ -8,19 +8,19 @@
 </head>
 <body>
     <body>
-        <h2 class="head-call">Women Ethnic Wear</h2>
+        <h2 class="head-call"></h2>
             <div class="box">
-                <a href="" id="main" id="hello">
-              <img src="../../images/furniture/sideTable.jpg" width="280px" class="imge"  id="newSadi"/></a>
+                <a href="" id="main" id="furnitures">
+              <img src="../../images/furniture/sideTable.jpg" width="280px" class="imge"  id="furniture"/></a>
                </div>
               </div>
               <div class="samall">
               <div class="big-container">
-              <img src="../../images/furniture/table1.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi1.png')">
-              <img src="../../images/furniture/table2.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi2.png')">
-              <img src="../../images/furniture/table3.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi3.png')">
-              <img src="../../images/furniture/table4.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi4.png')">
-              <img src="../../images/furniture/table5.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi5.png')">     
+              <img src="../../images/furniture/table1.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/table1.jpg')">
+              <img src="../../images/furniture/table2.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/table2.jpg')">
+              <img src="../../images/furniture/table3.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/table3.jpg')">
+              <img src="../../images/furniture/table4.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/table4.jpg')">
+              <img src="../../images/furniture/table5.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/table5.jpg')">     
               </div>
               <div class="cont_one">
               <span class="head">Side Table</span>
@@ -52,5 +52,27 @@
               </div>
     
               <script src="https://kit.fontawesome.com/f80ec2f635.js" crossorigin="anonymous"></script>
+              <script src="./../../javascript/furniture.js"> </script>
+
+              <script>
+                function MoveImage(num){
+              const mainImage = document.getElementById('furnitures');
+                if(num == 1){
+                  mainImage.src = "../../images/furniture/table1.jpg";
+                }
+                else if(num == 2){
+                  mainImage.src = "../../images/furniture/table2.jpg";
+                }
+                else if(num == 3){
+                  mainImage.src = "../../images/furniture/table3.jpg";
+                }
+                else if(num == 4){
+                  mainImage.src = "../../images/furniture/table4.jpg";
+                }
+                else if(num == 5){
+                  mainImage.src = "../../images/furniture/table5.jpg";
+                }
+              }
+              </script>
 </body>
 </html>

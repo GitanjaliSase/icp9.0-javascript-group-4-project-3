@@ -7,19 +7,19 @@
     <link href="./../../css/furnitures.css" rel="stylesheet">
 </head>
 <body>
-    <h2 class="head-call">Women Ethnic Wear</h2>
+    <h2 class="head-call"></h2>
         <div class="box">
-            <a href="" id="main" id="hello">
-          <img src="../../images/furniture/shoeRack.jpg" width="280px" class="imge"  id="newSadi"/></a>
+            <a href="" id="main" id="furnitures">
+          <img src="../../images/furniture/shoeRack.jpg" width="280px" class="imge"  id="furniture"/></a>
            </div>
           </div>
           <div class="samall">
           <div class="big-container">
-          <img src="../../images/furniture/shoe1.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi1.png')">
-          <img src="../../images/furniture/shoe2.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi2.png')">
-          <img src="../../images/furniture/shoe3.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi3.png')">
-          <img src="../../images/furniture/shoe14.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi4.png')">
-          <img src="../../images/furniture/shoe5.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi5.png')">     
+          <img src="../../images/furniture/shoe1.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/shoe1.jpg')">
+          <img src="../../images/furniture/shoe2.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/shoe2.jpg')">
+          <img src="../../images/furniture/shoe3.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/shoe3.jpg')">
+          <img src="../../images/furniture/shoe14.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/shoe14.jpg')">
+          <img src="../../images/furniture/shoe5.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/shoe5.jpg')">     
           </div>
           <div class="cont_one">
           <span class="head">Shoe Rackt</span>
@@ -52,6 +52,27 @@
           </div>
 
           <script src="https://kit.fontawesome.com/f80ec2f635.js" crossorigin="anonymous"></script>
+          <script src="./../../javascript/furniture.js"> </script>
 
+          <script>
+            function MoveImage(num){
+          const mainImage = document.getElementById('furnitures');
+            if(num == 1){
+              mainImage.src = "../../images/fashion-page/shoe1.jpg";
+            }
+            else if(num == 2){
+              mainImage.src = "../../images/furniture/shoe2.jpg";
+            }
+            else if(num == 3){
+              mainImage.src = "../../images/furniture/shoe3.jpg";
+            }
+            else if(num == 4){
+              mainImage.src = "../../images/furniture/shoe14.jpg";
+            }
+            else if(num == 5){
+              mainImage.src = "../../images/furniture/shoe5.jpg.";
+            }
+          }
+          </script>
 </body>
 </html>
