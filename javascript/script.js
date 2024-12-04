@@ -97,19 +97,20 @@ function backward() {
     slide.src = images[index]
 }
 
+const sidebar = document.getElementById('sidebar');
+const toggleBtn = document.getElementById('toggle-btn');
+const closeBtn = document.getElementById('close-btn');
 
-    function openSiderbar(){
-        const sidebarElement = document.getElementById('sidebar');
-        sidebarElement.style.visibility = 'visible';
-
-        const hamburgerMenuElement = document.getElementById('hamburger-menu');
-        hamburgerMenuElement.style.visibility = 'hidden'
+// Function to toggle the sidebar
+toggleBtn.addEventListener('click', () => {
+    if (sidebar.style.left === '0px') {
+        sidebar.style.left = '-300px'; // Hide sidebar
+    } else {
+        sidebar.style.left = '0'; // Show sidebar
     }
-    function closeSidebar(){
-        const sidebarElement = document.getElementById('sidebar');
-        sidebarElement.style.visibility = 'hidden';
+});
 
-        const hamburgerMenuElement = document.getElementById('hamburger-menu');
-        hamburgerMenuElement.style.visibility = 'visible'
-    }
-
+// Function to close the sidebar
+closeBtn.addEventListener('click', () => {
+    sidebar.style.left = '-300px';
+});
