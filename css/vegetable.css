@@ -170,6 +170,7 @@ body{
   padding: 0;
   overflow-x: hidden;
 }
+
 footer {
   background-color: #333;
   color: white;
@@ -179,6 +180,7 @@ footer {
   margin-right: 0px;
   margin-bottom: 0;
 }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -344,33 +346,24 @@ button {
       position: static;
       
   }
-  #head{
-    margin-right: 30px;
-    position: relative;
-    top: -630px;
-   
+  .head{
+    margin-right: 300px;
   }
+
   .container-quality {
       text-align: center;
-      position: relative;
-      top: -650px;
-      left: 10px;
+      position: static;
   }
-  .emoji{
-     position: relative;
-     top: -500px;
-     left: 20px;
-  }
+
   .btn {
       position: static;
       width: 80%;
       margin: 10px auto;
       display: block;
-      margin-top: 300px;
   }
+
   #btn {
       background-color: chocolate;
-      margin-left: 30px;
   }
 
   .size {
@@ -379,21 +372,18 @@ button {
       margin: 5px;
       font-size: 14px;
       display: inline-block;
-      margin-top: -150px;
-      left: 40px;
-      
+      margin-top: 630px;
   }
 
   .rate {
       font-size: 25px;
-      margin-right: 30px;
-      margin-top: -90px;
-    
+      margin-right: 100px;
+      margin-top: 50px
   }
 
   .stars {
       text-align: center;
-      top: -750px;
+      bottom: 50;
       margin-left: 40px;
   }
 
