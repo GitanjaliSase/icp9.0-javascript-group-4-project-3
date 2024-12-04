@@ -5,18 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kids</title>
     <link href="../../css/home/kids.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    
+    
+
+   
     
 </head>
 <body>
-    
+
+    <header>
+        <div class="header-container">
+            <div class="logo">ShopEase</div>
+            <input type="text" placeholder="Search for Products, Brands and More" class="search-bar">
+            <div class="header-icons">
+                <button class="b1">Login</button>
+                <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="hamburger" id="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
+
+            </div>
+        </div> 
+        <div class="sidebar" id="sidebar">
+            <i class="fa-solid fa-xmark" id="close-btn"></i>
+            <div class="sidebar-content">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="./pages/login.html" id="login-btn-sidebar">Login</a></li>
+                    <li><a href="./pages/signup.html" id="login-btn-sidebar">Sign up</a></li>
+                    <li><a href="./pages/grocery.html">Grocery</a></li>
+                    <li><a href="./pages/fashion.html">Women's Fashion</a></li>
+                    <li><a href="./pages/mens.html">Men's Fashion</a></li>
+                    <li><a href="./pages/toys.html">Toys</a></li>
+                    <li><a href="./pages/mobile.html">Mobiles</a></li>
+                    <li><a href="./pages/watch.html">Watches</a></li>
+                    <li><a href="./pages/electronics.html">Electronics</a></li>
+                    <li><a href="./pages/furnituree.html">Furniture</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
     <div class="slider">
         <div class="slides">
            <img src="../../images/kidsFashion/Slider1.jpg"  alt="KidsClothes1" class="slide"  id="slide">
-           <img src="../../images/kidsFashion/Slider2.jpg"  alt="KidsClothes1" class="slide"  id="slide">
+           <img src="../../images/kidsFashion/Slider2.jpg"  alt="KidsClothes1" class="slide"  >
         </div>
         
-        <img src="../../images/kidsFashion/less.png"     class="symbols  less-sym">
-        <img src="../../images/kidsFashion/greater.png"   class="symbols  greater-sym">
+        <img src="../../images/kidsFashion/less.png"     class="symbols  less-sym" onclick="preImg()">
+        <img src="../../images/kidsFashion/greater.png"   class="symbols  greater-sym"  onclick="nextImg()">
        
     </div>
 
@@ -24,19 +60,22 @@
 
         <div class="card">
             <img src="../../images/kidsFashion/kids2.jpg" alt="Kids Clothes 1">
-            <h3>AJ DEZINES Kids Ethnic Wear Cotton Printed Kurta Pyjama Set For Boys</h3>
+            <h3>
+                <a href="../../pages/kids/kids2-priview.html"  class="Aboutus-button"> AJ DEZINES Kids Ethnic Wear Cotton Printed Kurta Pyjama Set For Boys</a> </h3>
             <p>Price:  ₹999</p><br>
             <p class="rated"> 3.5⭐</p>
         </div>
         <div class="card">
             <img src="../../images/kidsFashion/kids3.jpg" alt="KidsClothes2">
-            <h3>KYDA KIDS 100% Cotton Kids Shorts for Boys & Girls - Regular Fit Casual Short for Unisex, Multicolor - Pack of 3</h3>
+            <h3>
+                <a href="../../pages/kids/kids3-priview.html"  class="Aboutus-button"> KYDA KIDS 100% Cotton Kids Shorts for Boys & Girls - Regular Fit Casual Short for Unisex, Multicolor - Pack of 3</a></h3>
             <p>Price:  ₹549</p><br>
             <p class="rated"> 4.0⭐</p>
         </div>
         <div class="card">
             <img src="../../images/kidsFashion/kids4.jpg" alt="KidsClothes3">
-            <h3>Hopscotch Girls Knee Length Casual Dresses</h3>
+            <h3>
+                <a href="../../pages/kids/kids4-priview.html"  class="Aboutus-button"> Hopscotch Girls Knee Length Casual Dresses</a></h3>
             <p>Price:  ₹580</p><br>
             <p class="rated"> 4.1⭐</p>
         </div>
@@ -47,13 +86,15 @@
 
         <div class="card">
             <img src="../../images/kidsFashion/kids5.jpg" alt="KidsClothes4">
-            <h3>Hopscotch Girls Knee Length Casual Dresses</h3>
+            <h3>
+                <a href="../../pages/kids/kids5-priview.html"  class="Aboutus-button"> Hopscotch Girls Knee Length Casual Dresses</a></h3>
             <p>Price:  ₹581</p><br>
             <p class="rated"> 3.8⭐</p>
         </div>
         <div class="card">
             <img src="../../images/kidsFashion/kids6.jpg" alt="KidsClothes5">
-            <h3>EIO New Born Baby Clothing Gift Set -13 Pieces</h3>
+            <h3>
+                <a href="../../pages/kids/kids6-priview.html" class="Aboutus-button">EIO New Born Baby Clothing Gift Set -13 Pieces</a></h3>
             <p>Price:  ₹599</p><br>
             <p class="rated"> 4.2⭐</p>
         </div>
@@ -83,12 +124,62 @@
         </div>
         <div class="card">
             <img src="../../images/kidsFashion/kids1.jpg" alt="KidsClothes9">
-            <h3>HAP Kings Round Neck Grey Melange Winter Thermal Set of Top Trouser/Thermal for Boys and Girls/Kids Thermal Set</h3>
+            <h3>
+                <a href="../../pages/kids/kids1-priew.html" class="Aboutus-button">HAP Kings Round Neck Grey Melange Winter Thermal Set of Top Trouser/Thermal for Boys and Girls/Kids Thermal Set</a></h3>
             <p>Price:  ₹339</p><br>
             <p class="rated"> 3.8⭐</p>
         </div>
 
     </div>
 
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>ShopEase</h2>
+                <p>Your one-stop shop for everything you need. From fashion to electronics, we offer the best deals just for you.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./pages/AboutUs.html" class="about">About Us</a></li>
+                    <li><a href="./pages/mens.html">Men's Clothing</a></li>
+                    <li><a href="./pages/fashion.html">Women's Fashion</a></li>
+                    <li><a href="./pages/electronics.html">Electronics</a></li>
+                    <li><a href="./pages/furnituree.html">Home & Kitchen</a></li>
+                    <li><a href="./pages/grocery.html">Grocery</a></li>
+                    <li><a href="./pages/toys.html">Toys</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="./pages/watch.html">Watches</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="mailto:support@shopeasy.com">support@shopeasy.com</a></li>
+                    <li><a href="tel:+1234567890">+1 234 567 890</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.flipkart.com/" class="social-icon"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.flipkart.com/" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.flipkart.com/" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Shopeasy | All Rights Reserved</p>
+            <p>Privacy Policy | Terms & Conditions | Cookie Policy</p>
+        </div>
+    </footer>
+<script src="https://kit.fontawesome.com/5aa42e6115.js" crossorigin="anonymous"></script> 
+<script src="../../javascript/kids.js"></script> 
 </body>
 </html>
+
+<link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/home1.css">
+    <link rel="stylesheet" href="./../css/style.css">

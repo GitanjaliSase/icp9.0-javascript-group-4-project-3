@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sadi1</title>
-    <link rel="stylesheet" href="../../css/saree.css">
+    <title>vegetable4</title>
+    <link rel="stylesheet" href="../../css/vegetable.css">
+
 </head>
 <body>
-    <h2 class="head-call">Women Ethnic Wear</h2>
+   
+    <h2 class="head-call">organic and pure vegetables</h2>
        
 <div class="box">
-    <img src="../../images/fashion-page/blue1.png" width="280px" class="imge"  id="main"/>
+    <img src="../../images/grocery-page/beetroot.png" width="280px" class="imge"  id="main"/>
    </div>
   </div>
   <div class="samall">
   <div class="big-container">
-  <img src="../../images/fashion-page/saree1.png" alt="mobile" id="product_card" onclick="MoveImage(1)">
-  <img src="../../images/fashion-page/saree2.png" alt="mobile" id="product_card" onclick="MoveImage(2)">
-  <img src="../../images/fashion-page/sarree3.png" alt="mobile" id="product_card" onclick="MoveImage(3)">
-  <img src="../../images/fashion-page/saree1.png" alt="mobile" id="product_card" onclick="MoveImage(4)">
-  <img src="../../images/fashion-page/saree1.png" alt="mobile" id="product_card" onclick="MoveImage(5)">     
+  <img src="../../images/grocery-page/beatroot1.png" alt="mobile" id="product_card" onclick="MoveImage(1)">
+  <img src="../../images/grocery-page/beatroot2.png" alt="mobile" id="product_card" onclick="MoveImage(2)">
+  <img src="../../images/grocery-page/beatroot3.png" alt="mobile" id="product_card" onclick="MoveImage(3)">
+  <img src="../../images/grocery-page/beatroot4.png" alt="mobile" id="product_card" onclick="MoveImage(4)">
+  <img src="../../images/grocery-page/beatroot5.png" alt="mobile" id="product_card" onclick="MoveImage(5)">     
   </div>
   <div class="cont_one">
-  <span class="head">LOROFY</span>
-  <p class="para"> The Irresistible Allure of Soft Silk Sarees</p>
-  <p class="para">Special price ₹890</p>
+  <span class="head">BEATROOT</span>
+  <p class="para"> organic and pure vegetables</p>
+  
+  <p class="para">Special price ₹90</p>
   <div>
   <button class="btn">Add To Cart</button> 
   <button class="btn" id="btn" onclick="order()">Buy Now</button>
@@ -36,12 +39,14 @@
   </div>
   <a href="../../pages/fashion.html" class="anker">
   <p class="emoji">↖️</p></a>
+  <br/> <br/>
+
   <p class="head" id="head">Sizes :</p>
   <p class="size">S</p>
   <p class="size">M</p>
-  <p class="size">L</p>
-  <p class="size">XL</p>
-  <p class="size">XXL</p>
+  <br/> <br/> <br/>
+  <br/>
+  <br/>
   <p class="rate">Rating :</p>
   <div class="stars"> 
     <i class="fa-solid fa-star active"></i>
@@ -53,7 +58,28 @@
 </div>
   </div>
   </div>
+  
 <script src="https://kit.fontawesome.com/f80ec2f635.js" crossorigin="anonymous"></script>
     <script src="../../javascript/script.js"></script>
+    <script>
+        function MoveImage(num){
+      const mainImage = document.getElementById('hello');
+        if(num == 1){
+          mainImage.src = "../images/grocery-page/beatroot1.png";
+        }
+        else if(num == 2){
+          mainImage.src = "../images/grocery-page/beatroot2.png";
+        }
+        else if(num == 3){
+          mainImage.src = "../images/grocery-page/beatroot3.png";
+        }
+        else if(num == 4){
+          mainImage.src = "../images/grocery-page/beeatroot4.png";
+        }
+        else if(num == 5){
+          mainImage.src = "../images/grocery-page/beatroot5.png";
+        }
+      }
+      </script>
 </body>
 </html>
