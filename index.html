@@ -61,7 +61,7 @@
             <p>Men's</p></a>
         </div>
         <div class="category">
-            <a href="./pages/mens.html">
+            <a href="./pages/kids/kids.html">
             <img src="./images/kidsFashion/kids2-2.jpg" alt="Fashion">
             <p>Kids</p></a>
         </div>
@@ -142,6 +142,7 @@
                     <li><a href="./pages/AboutUs.html" class="about">About Us</a></li>
                     <li><a href="./pages/mens.html">Men's Clothing</a></li>
                     <li><a href="./pages/fashion.html">Women's Fashion</a></li>
+                    <li><a href="./pages/kids/kids.html">Kid's Fashion</a></li>
                     <li><a href="./pages/electronics.html">Electronics</a></li>
                     <li><a href="./pages/furnituree.html">Home & Kitchen</a></li>
                     <li><a href="./pages/grocery.html">Grocery</a></li>
@@ -193,7 +194,13 @@
     function closeModel(){
         const overlayElement=document.getElementById('overlay');
         overlayElement.style.display = "none";
+        setTimeout(openModall, 1000);
     }
+
+    function openModall(){
+        const overlayElement=document.getElementById('overlay');
+        overlayElement.style.display = 'none';
+        }
 
 
 
