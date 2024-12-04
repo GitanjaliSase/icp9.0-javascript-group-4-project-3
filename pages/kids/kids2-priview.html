@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kids-product-priview</title>
+    <link href="../../css/home/kids.css" rel="stylesheet"> 
+    <link href="../../css/about.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="main">
+            <img src="../../images/kidsFashion/kids2.jpg" id="mainImage" />
+            <div class="thumbnails">
+                <img src="../../images/kidsFashion/kids2.jpg"   class="thumbnail" onclick="kidsWare('../../images/kidsFashion/kids2.jpg')" />
+                <img src="../../images/kidsFashion/kids2-1.jpg" class="thumbnail" onclick="kidsWare('../../images/kidsFashion/kids2-1.jpg')" />
+                <img src="../../images/kidsFashion/kids2-2.jpg" class="thumbnail" onclick="kidsWare('../../images/kidsFashion/kids2-2.jpg')" />
+                <img src="../../images/kidsFashion/kids3-3.jpg" class="thumbnail" onclick="kidsWare('../../images/kidsFashion/kids3-3.jpg')" />
+            </div>
+        </div>    
+        
+        <div class="details">
+            <p class="para">AJ DEZINES Kids Ethnic Wear Cotton Printed Kurta Pyjama Set For Boys</p>
+            <p class="para">Price: ₹999</p>
+    
+            <button class="btn">Add To Cart</button>
+            <button class="btn" id="btn" onclick="order()">Buy Now</button>
+    
+            <div class="container-quality">
+                <img src="../../images/fashion-page/add.png" class="quality-icon" onclick="incre()" />
+                <span id="quantity">0</span>
+                <img src="../../images/fashion-page/minus.png" class="quality-icon_1" onclick="dece()" />
+            </div>
+    
+            <p class="head" id="head">Sizes:</p>
+            <div>
+                <p class="size">S</p>
+                <p class="size">M</p>
+                <p class="size">L</p>
+                <p class="size">XL</p>
+                <p class="size">XXL</p>
+            </div>
+    
+            <p class="rate">Rating:</p>
+            <div class="stars">
+                <i class="fa-solid fa-star active"></i>
+                <i class="fa-solid fa-star active"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>    
+    </div>
+    </body>
+    </html>
+<script src="https://kit.fontawesome.com/5aa42e6115.js" crossorigin="anonymous"></script> 
+<script src="../../javascript/kids.js"></script>
+</body>
+</html>

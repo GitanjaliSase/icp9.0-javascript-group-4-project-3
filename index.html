@@ -15,7 +15,7 @@
             <div class="logo">ShopEase</div>
             <input type="text" placeholder="Search for Products, Brands and More" class="search-bar">
             <div class="header-icons">
-                <button class="b1">Login</button>
+                <a href="./pages/login.html"><button class="b1">Login</button></a>
                 <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
                 <div class="hamburger" id="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
             </div>
@@ -30,6 +30,7 @@
                     <li><a href="./pages/grocery.html">Grocery</a></li>
                     <li><a href="./pages/fashion.html">Women's Fashion</a></li>
                     <li><a href="./pages/mens.html">Men's Fashion</a></li>
+                    <li><a href="./pages/toys.html">Kids</a></li>
                     <li><a href="./pages/toys.html">Toys</a></li>
                     <li><a href="./pages/mobile.html">Mobiles</a></li>
                     <li><a href="./pages/watch.html">Watches</a></li>
@@ -58,6 +59,11 @@
             <a href="./pages/mens.html">
             <img src="./images/home-page/men's.jpg" alt="Fashion">
             <p>Men's</p></a>
+        </div>
+        <div class="category">
+            <a href="./pages/kids/kids.html">
+            <img src="./images/kidsFashion/kids2-2.jpg" alt="Fashion">
+            <p>Kids</p></a>
         </div>
         <div class="category">
             <a href="./pages/toys.html">
@@ -136,6 +142,7 @@
                     <li><a href="./pages/AboutUs.html" class="about">About Us</a></li>
                     <li><a href="./pages/mens.html">Men's Clothing</a></li>
                     <li><a href="./pages/fashion.html">Women's Fashion</a></li>
+                    <li><a href="./pages/kids/kids.html">Kid's Fashion</a></li>
                     <li><a href="./pages/electronics.html">Electronics</a></li>
                     <li><a href="./pages/furnituree.html">Home & Kitchen</a></li>
                     <li><a href="./pages/grocery.html">Grocery</a></li>
@@ -187,7 +194,14 @@
     function closeModel(){
         const overlayElement=document.getElementById('overlay');
         overlayElement.style.display = "none";
+        setTimeout(openModall, 1000);
+
     }
+
+    function openModall(){
+        const overlayElement=document.getElementById('overlay');
+        overlayElement.style.display = 'none';
+        }
 
 
 
