@@ -1,7 +1,7 @@
 .box{
   margin: 20px auto;
   height: 610px;
-  width: 1000px;
+  width: 1500px;
   border: none;
   object-fit: cover;
   background-color: rgba(248, 242, 242, 0.934);
@@ -11,12 +11,12 @@
   }
 .imge{
   position: relative;
-  top: 40px;
-  left: 100px;
+  top: 20px;
+  left: 60px;
 }
 .imge:hover{
   transform: scalex(1.1);
-  transition: 2s;
+  transition: 1s;
 }
 .text{
 text-align: center;
