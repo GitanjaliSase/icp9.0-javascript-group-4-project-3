@@ -15,8 +15,8 @@
 
 }
 .box:hover {
-    box-shadow: 2px 2px 2px 2px #d5d5d1;
-    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px #d5d5d1; /* Softer shadow */
+    border-radius: 10px; /* Less rounding of corners */
 }
 
 .imge {
@@ -26,7 +26,8 @@
     transition: transform 1s;
 }
 .imge:hover {
-    transform: scale(0.4);
+    transform: scale(1); /* No zoom effect */
+    transition: 0.1s; /* Very quick transition */
 }
 
 .text {

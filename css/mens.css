@@ -14,9 +14,9 @@
   top: 40px;
   left: 60px;
 }
-.imge:hover{
-  transform: scalex(1.1);
-  transition: 1s;
+.imge:hover {
+  transform: scale(1.05); /* Slightly smaller scaling */
+  transition: 0.5s; /* Faster transition */
 }
 .text{
 text-align: center;
