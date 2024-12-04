@@ -309,3 +309,139 @@
     border-radius: 2px;
     margin: 5px;
 }
+
+/*responsive for mobile*/
+
+@media (max-width: 480px) {
+    .thumbnail {
+        width: 30px;
+
+    }
+
+    .btn {
+        padding: 10px;
+        margin: 5px;
+        width: 40%;
+
+    }
+
+    .para {
+        font-size: 18px;
+        text-align: center;
+        margin: 0px 10px;
+    }
+
+    .head {
+        font-size: 16px;
+    }
+
+    .stars {
+        font-size: 14px;
+    }
+
+    .box {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        padding:10px 0px;
+        height:fit-content;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainImage {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .thumbnails {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .thumbnail {
+        width: 50px;
+        height: auto;
+        margin: 0 2px;
+        cursor: pointer;
+    }
+    
+    .details {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .para {
+       text-align: center;
+        margin: 5px 0;
+    }
+    
+    
+    
+    .container-quality {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .quality-icon {
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .size {
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    .stars {
+        color: gold;
+    }
+}   
+
+
+/*responsive for tab*/
+
+@media (max-width: 768px) {
+    .box {
+        padding-left:8px;
+        width: 768px;
+    }
+
+    .main{
+        margin:5px;
+    }
+
+    .thumbnail {
+        width: 60px;
+        margin-left: 20px;
+    }
+
+    .para{
+        font-size: 15px;
+    }
+
+    .btn {
+        width: 70%;
+        padding: 10px;
+    }
+
+    .container-quality {
+        flex-direction: column;
+    }
+
+    .quality-icon {
+        width: 25px;
+    }
+
+    .size {
+        font-size: 14px;
+    }
+}
