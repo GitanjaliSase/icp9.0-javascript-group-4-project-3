@@ -48,8 +48,8 @@ span{
 }
 .btn{
     position: absolute;
-    bottom: 370px;
-    right: 930px;
+    bottom: 270px;
+    right: 850px;
     background-color: orange;
     padding: 15px;
     padding-left: 30px;
@@ -70,7 +70,7 @@ span{
 .big-container{
   position: relative;
    bottom: 220px;
-   margin-left: 280px;
+   margin-left: 200px;
 }
 #product_card{
     width: 80px;
