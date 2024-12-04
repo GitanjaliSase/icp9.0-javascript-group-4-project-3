@@ -29,6 +29,7 @@
   font-weight: 900;
 }
 
+
 span {
   margin-right: 220px;
   color: cadetblue;
@@ -80,7 +81,7 @@ span {
 .big-container {
   position: relative;
   bottom: 220px;
-  margin-left: 280px;
+  margin-left: 180px;
 }
 
 #product_card {
@@ -136,11 +137,12 @@ span {
 }
 
 .rate {
-  position: relative;
+  position: absolute;
   bottom: 700px;
   right: 80px;
-  font-size: 20px;
+  font-size: 15px;
   color: green;
+
 }
 
 #rate {
@@ -240,4 +242,6 @@ span {
       width: 30px;
       height: 20px;
   }
+
+  
 }
