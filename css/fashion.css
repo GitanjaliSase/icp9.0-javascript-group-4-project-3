@@ -238,6 +238,13 @@ button {
     cursor: pointer;
     width:40px;
 }
+.category {
+    text-align: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
 
 @media (max-width: 480px) {
     body{
