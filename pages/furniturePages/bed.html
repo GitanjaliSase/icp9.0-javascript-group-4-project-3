@@ -7,27 +7,29 @@
     <link href="./../../css/furnitures.css" rel="stylesheet">
 </head>
 <body>
-    <h2 class="head-call">Women Ethnic Wear</h2>
+    <h2 class="head-call"></h2>
         <div class="box">
-            <a href="" id="main" id="hello">
-          <img src="../../images/furniture/bed.jpg" width="280px" class="imge"  id="newSadi"/></a>
+            <a href="" id="main" id="furnitures">
+          <img src="../../images/furniture/bed.jpg" width="280px" class="imge"  id="furniture"/></a>
            </div>
           </div>
           <div class="samall">
           <div class="big-container">
-          <img src="../../images/furniture/bed1.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi1.png')">
-          <img src="../../images/furniture/bed2.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi2.png')">
-          <img src="../../images/furniture/bed3.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi3.png')">
-          <img src="../../images/furniture/bed4.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi4.png')">
-          <img src="../../images/furniture/bed.jpg"  id="product_card" onclick="sadiImage('../../images/fashion-page/sadi5.png')">     
+          <img src="../../images/furniture/bed1.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/bed1.jpg')">
+          <img src="../../images/furniture/bed2.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/bed2.jpg')">
+          <img src="../../images/furniture/bed3.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/bed3.jpg')">
+          <img src="../../images/furniture/bed4.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/bed4.jpg')">
+          <img src="../../images/furniture/bed.jpg"  id="product_card" onclick="furnitureimg('../../images/furniture/bed.jpg')">     
           </div>
           <div class="cont_one">
           <span class="head">Bed Set</span>
           <p class="para">TV Entertainment Unit Set Top Box<br> Stand/Décor Display Unit</p>
           <p class="para">Special price ₹32,000</p>
           <div style=>
-          <button class="btn">Add To Cart</button> 
-          <button class="btn" id="btn" onclick="order()">Buy Now</button>
+
+          <button class="btn">Add to cart</button>
+          <button class="btn" id="btn"  onclick="order()">Buy now</button> 
+          
           </div>
           <div class="container-quality">
           <img src="../../images/fashion-page/add.png" class="quality-icon" onclick="incre()"/>
@@ -54,5 +56,25 @@
           
           <script src="./../../javascript/furniture.js"> </script>
 
+          <script>
+            function MoveImage(num){
+          const mainImage = document.getElementById('furnitures');
+            if(num == 1){
+              mainImage.src = "../../images/furniture/bed1.jpg";
+            }
+            else if(num == 2){
+              mainImage.src = "../../images/furniture/bed2.jpg";
+            }
+            else if(num == 3){
+              mainImage.src = "../../images/furniture/bed3.jpg";
+            }
+            else if(num == 4){
+              mainImage.src = "../../images/furniture/bed4.jpg";
+            }
+            else if(num == 5){
+              mainImage.src = "../../images/furniture/bed2.jpg";
+            }
+          }
+          </script>
 </body>
 </html>
