@@ -5,18 +5,18 @@
     margin-bottom: 20px;
 }
 
-.box {
+.box{
     height: 510px;
     width: 310px;
     border: none;
     background-color: rgba(248, 242, 242, 0.934);
-    box-shadow: 2px 15px 12px 6px #ffffe6;
+    box-shadow:  2px 15px 12px 6px #ffffe6;
     margin: 20px;
-    transition: all 0.3s ease-in-out;
+
 }
 .box:hover {
-    box-shadow: 2px 2px 2px 2px #d5d5d1;
-    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px #d5d5d1; /* Softer shadow */
+    border-radius: 10px; /* Less rounding of corners */
 }
 
 .imge {
@@ -26,7 +26,8 @@
     transition: transform 1s;
 }
 .imge:hover {
-    transform: scale(0.8);
+    transform: scale(1); /* No zoom effect */
+    transition: 0.1s; /* Very quick transition */
 }
 
 .text {
@@ -62,7 +63,8 @@ span {
     right: 100px;
 }
 
-.rated {
+
+.rated{
     height: 30px;
     width: 60px;
     border-radius: 5px;
@@ -71,11 +73,10 @@ span {
     position: relative;
     bottom: 35px;
     left: 20px;
-    color: white;
     padding-left: 20px;
     padding-top: 5px;
-    text-align: center;
 }
+
 
 .val {
     font-size: 25px;
