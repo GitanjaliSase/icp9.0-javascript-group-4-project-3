@@ -12,15 +12,13 @@
         <div class="main">
             <img src="../../images/kidsFashion/kids1.jpg" id="mainImage" />
             <div class="thumbnails">
-                <img src="../../images/kidsFashion/kids1.jpg" class="thumbnail" onclick="kidsWare('../../images/kidsFashion/kids1.jpg')" />
+                <img src="../../images/kidsFashion/kids1.jpg"   class="thumbnail" onclick="kidsWare('../../images/kidsFashion/kids1.jpg')" />
                 <img src="../../images/kidsFashion/kids1-1.jpg" class="thumbnail" onclick="kidsWare('../../images/kidsFashion/kids1-1.jpg')" />
                 <img src="../../images/kidsFashion/kids1-2.jpg" class="thumbnail" onclick="kidsWare('../../images/kidsFashion/kids1-2.jpg')" />
                 <img src="../../images/kidsFashion/kids1-3.jpg" class="thumbnail" onclick="kidsWare('../../images/kidsFashion/kids1-3.jpg')" />
             </div>
         </div>    
         
-        
-    
         <div class="details">
             <p class="para">AJ DEZINES Kids Ethnic Wear Cotton Printed Kurta Pyjama Set For Boys</p>
             <p class="para">Price: ₹999</p>
@@ -51,20 +49,49 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
             </div>
-        </div>
-        
+        </div>    
     </div>
-    
     </body>
     </html>
-   
+<script src="https://kit.fontawesome.com/5aa42e6115.js" crossorigin="anonymous"></script> 
+<script>
+
+
+function kidsWare(num){
+    const mainImage = document.getElementsByClassName('thumbnails');
+      if(num == 1){
+        mainImage.src = "../../images/kidsFashion/kids1.jpg";
+      }
+      else if(num == 2){
+        mainImage.src = "../../images/kidsFashion/kids1-1.jpg";
+      }
+      else if(num == 3){
+        mainImage.src = "../../images/kidsFashion/kids1-2.jpg";
+      }
+      else if(num == 4){
+        mainImage.src = "../../images/kidsFashion/kids1-3.jpg";
+      }
     
+    }
 
 
+    const quantElement = document.getElementById('quantity'); 
+    
+    function incre(){
+      let quantity = parseInt(quantElement.innerText);
+      quantElement.innerText = ++quantity;
+    }
+    function dece(){
+        let quantity = parseInt(quantElement.innerText);
+        if(quantity>1){
+            quantElement.innerText = --quantity;
+        }
+    }
 
-
-
-<script src="https://kit.fontawesome.com/5aa42e6115.js" crossorigin="anonymous"></script>    
+    function order(){
+      alert('Your order is confirmed...');
+         }
+</script>   
 </body>
 </html>
 
@@ -79,4 +106,4 @@
 
 
 
-<script src="https://kit.fontawesome.com/5aa42e6115.js" crossorigin="anonymous"></script>   
+
