@@ -384,7 +384,7 @@ bottom: 680px;*/
 }
 
 .thumbnail {
-    cursor: pointer;
+   
     display: flex;
     justify-content: center;
     flex-direction: row;

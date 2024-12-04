@@ -26,6 +26,10 @@ span{
     margin-right: 220px;
     color: cadetblue;
 }
+
+.container-quality{
+    margin-top: 50px;
+}
 #quantity{
    position: relative;
    left: 110px;
@@ -37,18 +41,23 @@ span{
     height: 20px;
     cursor: pointer;
     position: relative;
-    left: 100px;
+    right: 100px;
 }
 .quality-icon_1{
     height: 20px;
     cursor: pointer;
     position: relative;
-    right: 100px;
+    left: 100px;
 }
-.btn{
+
+.btn-container{
+    margin-top:0 ;
+   
+}
+.btn1{
     position: absolute;
-    bottom: 240px;
-    right: 505px;
+    bottom: 280px;
+    right: 605px;
     background-color: orange;
     padding: 15px;
     padding-left: 30px;
@@ -60,8 +69,9 @@ span{
 #btn{
     background-color: chocolate;
     padding-left: 30px;
-    margin-right: 150px;
     cursor: pointer;
+    right: 450px;
+
 }
 .btn:hover{
     box-shadow: 2px 3px 4px 3px rgb(188, 185, 180);
@@ -102,7 +112,7 @@ span{
 }
 .container-quality{
   position: relative;
-  bottom:580px;
+  bottom:560px;
   font-size: 20px;
   right: 180px;
 }

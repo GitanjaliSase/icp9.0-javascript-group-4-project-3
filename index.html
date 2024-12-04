@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopEase</title>
     <script src="https://kit.fontawesome.com/5aa42e6115.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/home/home1.css">
+        <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/home1.css">
 
 </head>
 <body>
@@ -15,12 +15,33 @@
             <div class="logo">ShopEase</div>
             <input type="text" placeholder="Search for Products, Brands and More" class="search-bar">
             <div class="header-icons">
-                <button>Login</button>
+                <button class="b1">Login</button>
                 <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="hamburger" id="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
+
             </div>
         </div> 
-        
-    </header>
+        <div class="sidebar" id="sidebar">
+            <i class="fa-solid fa-xmark" id="close-btn"></i>
+            <div class="sidebar-content">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="./pages/login.html" id="login-btn-sidebar">Login</a></li>
+                    <li><a href="./pages/signup.html" id="login-btn-sidebar">Sign up</a></li>
+                    <li><a href="./pages/grocery.html">Grocery</a></li>
+                    <li><a href="./pages/fashion.html">Women's Fashion</a></li>
+                    <li><a href="./pages/mens.html">Men's Fashion</a></li>
+                    <li><a href="./pages/toys.html">Toys</a></li>
+                    <li><a href="./pages/mobile.html">Mobiles</a></li>
+                    <li><a href="./pages/watch.html">Watches</a></li>
+                    <li><a href="./pages/electronics.html">Electronics</a></li>
+                    <li><a href="./pages/furnituree.html">Furniture</a></li>
+
+                </ul>
+            </div>
+        </div>
+      </header>
+      
     <div class="category-container">
         <a href="./pages/grocery.html">
         <div class="category">
@@ -83,7 +104,19 @@
                     <label for="username">Username:</label>
                     <input type="text" id="username" required>
                 </div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <label for="captcha1" id="c1">Captcha:</label>
+            <div class="captcha-group">
+                <input type="text" id="captcha1" placeholder="11111" required>
+                <label for="captcha"></label>
+                <input type="text" id="captcha" placeholder="Enter captcha" required>
+                <i class="fa-solid fa-arrows-rotate" id="refresh" onclick="captcha()"></i>
+         </div>
                 </div><br>
+                <button class="Cancel" onclick="closeModel()">Login</button>
+              <p class="signup">No account? <a href="./pages/signup.html">Sign up</a></p>
             </div>
             </div>
         </div>
@@ -107,7 +140,7 @@
                     <li><a href="./pages/electronics.html">Electronics</a></li>
                     <li><a href="./pages/furnituree.html">Home & Kitchen</a></li>
                     <li><a href="./pages/grocery.html">Grocery</a></li>
-                    <li><a href="#">Toys</a></li>
+                    <li><a href="./pages/toys.html">Toys</a></li>
                     <li><a href="#">Mobile</a></li>
                     <li><a href="./pages/watch.html">Watches</a></li>
                 </ul>
@@ -156,6 +189,37 @@
         const overlayElement=document.getElementById('overlay');
         overlayElement.style.display = "none";
     }
+
+
+
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+const sidebar = document.getElementById('sidebar');
+const closeBtn = document.getElementById('close-btn');
+
+// Open sidebar
+hamburgerMenu.addEventListener('click', () => {
+    sidebar.classList.add('open');
+});
+
+// Close sidebar
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+});
+
+
+function captcha(){
+       const min=10001;
+        const max=70001;
+        const Num=Math.floor(Math.random()*(max-min))+min;
+        document.getElementById("captcha1").value=Num;
+
+
+ }
+
+
+       
+
+
      </script>
 </body>
 </html>
