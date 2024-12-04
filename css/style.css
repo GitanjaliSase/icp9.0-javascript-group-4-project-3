@@ -272,6 +272,8 @@ footer {
     background-color: #333;
     color: white;
     padding: 40px 0;
+    width: 100%;
+margin-top: 40px;
 }
 
 .footer-content {
@@ -341,9 +343,6 @@ footer {
 
 
 @media (max-width: 1024px) and (min-width: 768px) {
-    .product:hover {
-        transform: scale(1.05);
-    }
     .category-container{
         flex-wrap: wrap;
         gap: 20px;
@@ -385,21 +384,6 @@ footer {
 
 
 @media (max-width: 480px) {
-    .category-title {
-        font-size: 1em;
-    }
-
-    .product {
-        width: 100%;
-        margin: 0.5em 0;
-    }
-
-    header h1 {
-        font-size: 1.5em;
-    }
-    #search{
-        width: 60%;
-    }
     .content h1 {
         font-size: 1.2rem;
         color: #1c471b;
@@ -412,14 +396,13 @@ footer {
         background-color: #1c471b;
         color: #fff;
         border: none;
-        padding: 5px;
-        font-size: 13px;
+        padding: 0.75rem 1.5rem;
+        font-size: 15px;
         font-weight: bold;
         border-radius: 5px;
         cursor: pointer;
         margin-left:15px;
-        height: 30px;
-        width: 100px;
+        height: 50px;
       }
       
       
@@ -522,7 +505,7 @@ button:hover{
 
 
 .hamburger {
-    display:none;
+    display: none;
     cursor: pointer;
     font-size: 28px;
     color: white;
@@ -580,14 +563,6 @@ button:hover{
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .category-title {
-        font-size: 1.2em;
-    }
-
-    .product {
-        width: 45%;
-    }
-
     .b1{
         display: none;
     }
@@ -666,9 +641,8 @@ button:hover{
 
 /* Tablet, Laptop and Larger Screens Styles */
 @media (min-width: 769px) {
-
     .hamburger {
-        display:none; 
+        display: none;  /* Hide the hamburger on larger screens */
     }
 
     .category-container {
