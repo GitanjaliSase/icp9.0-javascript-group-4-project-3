@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sadi1</title>
-    <link rel="stylesheet" href="../../css/home/vegetable.css">
+    <title>vegetable 2</title>
+    <link rel="stylesheet" href="../../css/vegetable.css">
 </head>
 <body>
+    
     <h2 class="head-call">Women Ethnic Wear</h2>
     <div class="box">
-        <img src="../../images/grocery-page/bringe1.png" width="280px" class="imge"  id="rounded"/>
+        <img src="../../images/grocery-page/shimala.png" width="280px" class="imge"  id="rounded"/>
        </div>
       </div>
       <div class="samall">
       <div class="big-container">
-      <img src="../../images/grocery-page/bringe1.png"  id="product_card" onclick="clickImage('../../images/grocery-page/bringe1.png')">
-      <img src ="../../images/grocery-page/bringle2.png"  id="product_card" onclick="clickImage('../../images/grocery-page/bringle2.png')">
-      <img src="../../images/grocery-page/bringle3.png"  id="product_card" onclick="clickImage('../../images/grocery-page/bringle3.png')">
-      <img src="../../images/grocery-page/bringle4.png"  id="product_card" onclick="clickImage('../../images/grocery-page/bringle4.png')">
-      <img src="../../images/grocery-page/bringle5.png"  id="product_card" onclick="clickImage('../../images/grocery-page/bringle5.png')">     
+      <img src="../../images/grocery-page/shimala1.png"  id="product_card" onclick="clickImage('../../images/grocery-page/shimala1.png')">
+      <img src ="../../images/grocery-page/shimala2.png"  id="product_card" onclick="clickImage('../../images/grocery-page/shimala2.png')">
+      <img src="../../images/grocery-page/shimala3.png"  id="product_card" onclick="clickImage('../../images/grocery-page/shimala3.png')">
+      <img src="../../images/grocery-page/shimala4.png"  id="product_card" onclick="clickImage('../../images/grocery-page/shimala4.png')">
+      <img src="../../images/grocery-page/shimala5.png"  id="product_card" onclick="clickImage('../../images/grocery-page/shimala5.png')">     
       </div>
       <div class="cont_one">
-      <span class="head">LOROFY</span>
+      <span class="head">SHIMALA</span>
       <p class="para"> organic and pure vegetables</p>
       <p class="para">Special price ₹80</p>
       <div>
@@ -35,9 +36,13 @@
       </div>
       <a href="../../pages/grocery.html" class="anker">
       <p class="emoji">↖️</p></a>
+      <br/> <br/>
       <p class="head" id="head">Sizes :</p>
+
       <p class="size">S</p>
       <p class="size">M</p>
+      <br/>
+      <br/>
      
       <p class="rate">Rating :</p>
       <div class="stars"> 
@@ -50,7 +55,28 @@
     </div>
       </div>
       </div>
+      
   <script src="https://kit.fontawesome.com/f80ec2f635.js" crossorigin="anonymous"></script>
     <script src="../../javascript/grocery.js"></script>
-</body>
-</html>
+    <script>
+        function MoveImage(num){
+      const mainImage = document.getElementById('hello');
+        if(num == 1){
+          mainImage.src = "../images/grocery-page/shimala1.png";
+        }
+        else if(num == 2){
+          mainImage.src = "../images/grocery-page/shimala2.png";
+        }
+        else if(num == 3){
+          mainImage.src = "../images/grocery-page/shimala3.png";
+        }
+        else if(num == 4){
+          mainImage.src = "../images/grocery-page/shimala4.png";
+        }
+        else if(num == 5){
+          mainImage.src = "../images/grocery-page/shimala5.png";
+        }
+      }
+      </script>
+  </body>
+  </html>

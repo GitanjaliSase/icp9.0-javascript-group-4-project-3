@@ -17,5 +17,5 @@ Shopease is an online shopping platform offering a variety of products with a si
 # HomePage
 ![ShopEase Homepage](./images/home-page/home.png)
 
-
-
+# Visit website
+[ShopEase](https://icp9-0-javascript-group-4-project-3.vercel.app/)
