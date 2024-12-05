@@ -39,20 +39,19 @@
                       <li><a href="../pages/furnituree.html">Furniture</a></li>
                   </ul>
               </div>
-          
-      
-  <p class="logoe">
-      <a href="..//pages/furnituree.html">
-      <img src="../images/furniture/chairs.jpg" alt="" style="height: 120px;" class="logoo"></a>
-      <a href="../pages/furniturePages/kitchen.html">
-      <img src="../images/furniture/gas.jpg" alt="" style="height: 120px; width: 100px;" class="logoo"></a>
-      <a href="../pages/furniturePages/home.html">
-      <img src="../images/furniture/bedsheet.jpg" alt="" style="height: 120px;" class="logoo" width="100px"></a></p>
-     </div>
-     <div>
+              <p class="logoe">
+                <a href="..//pages/furnituree.html">
+                <img src="../images/furniture/chairs.jpg" alt="" style="height: 120px;" class="logoo"></a>
+                <a href="../pages/furniturePages/kitchen.html">
+                <img src="../images/furniture/gas.jpg" alt="" style="height: 120px; width: 100px;" class="logoo"></a>
+                <a href="../pages/furniturePages/home.html">
+                <img src="../images/furniture/bedsheet.jpg" alt="" style="height: 120px;" class="logoo" width="100px"></a></p>
+               </div>
+               <div>
       <h2 class="head">Furniture and kitchen </h2>
+     
       <div class="img-changer-container">
-          <img src="../images/#" class="banner-img" id="slider">
+          <img src="../images/furniture/kitchens.jpg" class="banner-img" id="slider">
           <img src="./../images/watch-img/left-arroww.png" class="icon-action icon-left" onclick="backward()" />
           <img src="./../images/watch-img/right-arrow.png" class="icon-action icon-right" onclick="forward()" />
       </div>
@@ -196,6 +195,25 @@
   </footer>
 
   <script src="../javascript/furniture.js"></script>
+  <script>
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const sidebar = document.getElementById('sidebar');
+  const closeBtn = document.getElementById('close-btn');
+  
+  // Open sidebar
+  hamburgerMenu.addEventListener('click', () => {
+      sidebar.classList.add('open');
+  });
+  
+  // Close sidebar
+  closeBtn.addEventListener('click', () => {
+      sidebar.classList.remove('open');
+  });
+  
+  
+  
+   </script>
+  
 
 </body>
 </html>
