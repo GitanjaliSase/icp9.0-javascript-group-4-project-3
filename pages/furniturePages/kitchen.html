@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitchen Set</title>
+    <script src="https://kit.fontawesome.com/5aa42e6115.js" crossorigin="anonymous"></script>
     <link href="./../../css/furnituree.css" rel="stylesheet">
 </head>
 <body>
+   <header>
+      <div class="header-container">
+          <div class="logo">ShopEase</div>
+          <input type="text" placeholder="Search for Products, Brands and More" class="search-bar">
+          <div class="header-icons">
+              <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="header-container">
+                  <div class="cart-icon">
+                      <i class="fa-solid fa-bars" id="toggle-btn"></i>
+                  </div>
+              </div>
+          </header>
+      
+          <div class="sidebar" id="sidebar">
+              <i class="fa-solid fa-xmark" id="close-btn"></i>
+              <div class="sidebar-content">
+                  <h3>Categories</h3>
+                  <ul>
+                      <li><a href="../pages/login.html">Login</a></li>
+                      <li><a href="../pages/signup.html">Sign up</a></li>
+                      <li><a href="../pages/grocery.html">Grocery</a></li>
+                      <li><a href="#">Women's Fashion</a></li>
+                      <li><a href="../pages/mens.html">Men's Fashion</a></li>
+                      <li><a href="../pages/toys.html">Toys</a></li>
+                      <li><a href="..//index.html">Mobiles</a></li>
+                      <li><a href="../pages/watch.html">Watches</a></li>
+                      <li><a href="../pages/electronics.html">Electronics</a></li>
+                      <li><a href="../pages/furnituree.html">Furniture</a></li>
+                  </ul>
+              </div>
+          </div>
+      
+          <p class="logoe">
+            <a href="./../../pages/furnituree.html">
+            <img src="./../../images/furniture/chairs.jpg" alt="" style="height: 120px;" class="logoo"></a>
+            <a href="./../../pages/furniturePages/kitchen.html">
+            <img src="./../../images/furniture/gas.jpg" alt="" style="height: 120px; width: 100px;" class="logoo"></a>
+            <a href="./../../pages/furniturePages/home.html">
+            <img src="./../../images/furniture/pot.jpg" alt="" style="height: 120px;" class="logoo" width="100px"></a></p>
+           </div>
+           <div>
+      <h2 class="head">Women Ethnic Wear</h2>
+      <div class="img-changer-container">
+          <img src="./../../images/furniture/kitchens.jpg" class="banner-img" id="slider">
+          <img src="./../../images/watch-img/left-arroww.png" class="icon-action icon-left" onclick="backward()" />
+          <img src="./../../images/watch-img/right-arrow.png" class="icon-action icon-right" onclick="forward()" />
+      </div>
+      </div>
+     </div>
+ 
    
     <div class="container"> 
 
@@ -74,29 +125,22 @@ Shahaz Crafts Pure Sheesham Wooden<br> Spoon Set Of 7  1 Rice, Best<br> Tools Fo
 Pigeon by Stovekraft Favourite <br>Outer Non Induction<br>Pressure cooker<span class="val">₹2,000</span></p>
    <p class="rated"> 4.8⭐</p>
 </div>
-
-<img src="./../../images/furniture/flower.jpg">
-Artificial Bougainvillea Fake Flowers for Diwali, Home
-
-SATYAM KRAFT
-
-<img src="./../../images/furniture/sticker.jpg">
-CVANU Tree & Women Self-Adhesive Vinyl Wall Sticker for Wall Decoration (40inX36in)_S259
-
-<img src="./../../images/furniture/cover.jpg">
-Decorian Premium Soft Quilted Velvet Sofa Cover Mat, Sofa Seat Runner for Couch (1 Seater, Elephant)
-
-<img src="./../../images/furniture/bedsheet.jpg">
-Cloth Fusion Warm Winter Bedsheet for Double Bed King Size with 2 Pillow Covers, Cozy Woolen Bedsheets for Double Bed (90"X100" inches, Geo Teal)
-
-<img src="./../../images/furniture/photo.jpg">
-Art Street Shooting Star Wall Photo Frames for living Room, Set of 16 Photo frames (Black)
-
-<img src="./../../images/furniture/cuttt.jpg">
-Ultimate Trends 570 GSM Heavy Duty Premium Blackout Curtains with Tie Back and Diamond Eyelets Set of 2 Panels (Door 8 FEET, ROSÉ & Leaf)
-
-<img src="./../../images/furniture/lotus.jpg">
-Water Sensor Lotus Floating Smokeless Candles & Lotus Flowers Sensor Led Tea Light Unbreakable for Outdoor and Indoor Festival Decoration, Home, Weddings, Events, Decorations (Multicolor) (Pack of 5)
+<script src="./../../javascript/furniture.js"></script>
+<script>
+   const hamburgerMenu = document.getElementById('hamburger-menu');
+   const sidebar = document.getElementById('sidebar');
+   const closeBtn = document.getElementById('close-btn');
+   
+   // Open sidebar
+   hamburgerMenu.addEventListener('click', () => {
+       sidebar.classList.add('open');
+   });
+   
+   // Close sidebar
+   closeBtn.addEventListener('click', () => {
+       sidebar.classList.remove('open');
+   });
+    </script>
 
 </body>
 </html>
