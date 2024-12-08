@@ -32,3 +32,51 @@
       });
     });
    });
+
+   const sidebar = document.getElementById('sidebar');
+   const toggleBtn = document.getElementById('toggle-btn');
+   const closeBtn = document.getElementById('close-btn');
+   
+   // Function to toggle the sidebar
+   toggleBtn.addEventListener('click', () => {
+       if (sidebar.style.left === '0px') {
+           sidebar.style.left = '-300px'; // Hide sidebar
+       } else {
+           sidebar.style.left = '0'; // Show sidebar
+       }
+   });
+   
+   // Function to close the sidebar
+   closeBtn.addEventListener('click', () => {
+       sidebar.style.left = '-300px';
+   });
+   
+   let images = ["./../../images/furniture/furnitures.jpg",
+    "./../../images/furniture/kitchens.jpg", 
+    "./../../images/furniture/homes.jpg",
+     "./../../images/furniture/furnitures.jpg",
+   ];
+let index = 0;
+const slide = document.getElementById('slider');
+
+
+function forward() {
+   if (index < images.length - 1) {
+       index++;
+   }
+   else {
+       index = 0;
+   }
+
+   slide.src = images[index]
+}
+
+function backward() {
+   if (index > 0) {
+       index--;
+   }
+   else {
+       index = images.length - 1;
+   }
+   slide.src = images[index]
+}

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/5aa42e6115.js" crossorigin="anonymous"></script>
     <link href="./../css/furnituree.css" rel="stylesheet">
+
 </head>
 <body>
    <header>
@@ -17,7 +19,7 @@
                   <div class="cart-icon">
                       <i class="fa-solid fa-bars" id="toggle-btn"></i>
                   </div>
-              </div>
+            </div>
           </header>
       
           <div class="sidebar" id="sidebar">
@@ -37,34 +39,25 @@
                       <li><a href="../pages/furnituree.html">Furniture</a></li>
                   </ul>
               </div>
-          </div>
-      
-  <p class="logoe">
-      <a href="..//pages/fashion.html">
-      <img src="../images/fashion-page/sareelogo.png" alt="" style="height: 120px;" class="logoo"></a>
-      <a href="../pages/womens/dresswear.html">
-      <img src="../images/fashion-page/dresslogo.png" alt="" style="height: 120px; width: 100px;" class="logoo"></a>
-      <a href="../pages/womens/footwear.html">
-      <img src="../images/fashion-page/footwearlogo.png" alt="" style="height: 120px;" class="logoo" width="100px"></a></p>
-     </div>
-     <div>
-      <h2 class="head">Women Ethnic Wear</h2>
+              </div>
+              <p class="logoe">
+                <a href="..//pages/furnituree.html">
+                <img src="../images/furniture/bed.jpg" alt="" style="height: 120px;" class="logoo"></a>
+                <a href="../pages/furniturePages/kitchen.html">
+                <img src="../images/furniture/gas.jpg" alt="" style="height: 120px; width: 100px;" class="logoo"></a>
+                <a href="../pages/furniturePages/home.html">
+                <img src="../images/furniture/bedsheet.jpg" alt="" style="height: 120px;" class="logoo" width="100px"></a></p>
+               </div>
+               <div>
+      <h2 class="head">Furniture and kitchen </h2>
+     
       <div class="img-changer-container">
-          <img src="../images/fashion-page/SSB2.jpg" class="banner-img" id="slider">
+          <img src="./../images/furniture/furnitures.jpg" class="banner-img" id="slider">
           <img src="./../images/watch-img/left-arroww.png" class="icon-action icon-left" onclick="backward()" />
           <img src="./../images/watch-img/right-arrow.png" class="icon-action icon-right" onclick="forward()" />
       </div>
       </div>
      </div>
- 
-  <div class="container"> 
-       <div class="box">
-          <a href="../pages/womens/saree.html">
-         <img src="../images/fashion-page/saree1.png" alt="" width="280px" class="imge">
-       <p class="text"> <span>LOROFY</span>
-          Self Design Bollywood Net Saree  (Black)Special price<br><span class="val">₹299</span></p></a>
-          <p class="rated"> 3.8⭐</p>
-  </div>
    
     <div class="container"> 
         <div class="box">
@@ -158,6 +151,7 @@
    <p class="rated"> 4.8⭐</p>
 </div>
    </div>
+
    <footer class="footer">
       <div class="footer-content">
           <div class="footer-section about">
@@ -200,5 +194,25 @@
           <p>Privacy Policy | Terms & Conditions | Cookie Policy</p>
       </div>
   </footer>
+
+  <script src="../javascript/furniture.js"></script>
+
+  <script>
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const sidebar = document.getElementById('sidebar');
+  const closeBtn = document.getElementById('close-btn');
+  
+  // Open sidebar
+  hamburgerMenu.addEventListener('click', () => {
+      sidebar.classList.add('open');
+  });
+  
+  // Close sidebar
+  closeBtn.addEventListener('click', () => {
+      sidebar.classList.remove('open');
+  });
+   </script>
+  
+
 </body>
 </html>
