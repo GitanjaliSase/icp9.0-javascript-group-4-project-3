@@ -165,3 +165,139 @@ span{
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  body {
+      margin: 0;
+      padding: 0;
+      margin-right: 0;
+      overflow-x: hidden;
+  }
+
+  .box {
+      width: 90%;
+      margin: 10px auto;
+      height: auto;
+      padding: 10px;
+  }
+
+  .imge {
+      width: 100%;
+      left: 0;
+      top: 20px;
+  }
+
+  .head-call {
+      text-align: center;
+      font-size: 20px;
+      margin: 10px 0;
+  }
+
+  .big-container {
+      margin-left: 0;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+  }
+
+  #product_card {
+      width: 60px;
+      height: 70px;
+      margin: 5px;
+  }
+
+  .cont_one {
+      padding: 10px;
+      text-align: center;
+  }
+
+  .head, .para {
+      font-size: 20px;
+      text-align: center;
+      position: static;
+      
+  }
+  #head{
+    margin-right: 20px;
+    position: relative;
+    top:-330px;
+   
+  }
+  .container-quality {
+      text-align: center;
+      position: relative;
+      top: -298px;
+      left: 10px;
+  }
+  .emoji{
+     position: relative;
+     top: -150px;
+     left: 20px;
+  }
+  .btn {
+      position: static;
+      width: 80%;
+      margin: 10px auto;
+      display: block;
+      margin-top: 300px;
+  }
+  #btn {
+      background-color: chocolate;
+      margin-left: 30px;
+      margin-top: -120px;
+  }
+
+  .size {
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 300px;
+      left: 50px;
+      
+  }
+
+  .rate {
+      font-size: 25px;
+      margin-right: 30px;
+      margin-top: 60px;
+    
+  }
+
+  .stars {
+      text-align: center;
+      top: -750px;
+      margin-left: 40px;
+  }
+
+  footer {
+      padding: 20px;
+      font-size: 14px;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .header-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .search-bar {
+      width: 90%;
+      margin: 10px 0;
+  }
+
+  .header-icons {
+      justify-content: center;
+  }
+
+  .cart-icon {
+      width: 30px;
+      height: auto;
+  }
+}
+
